@@ -109,3 +109,9 @@ $ npm test
  # output image
 
  C:\Users\keert\Downloads\output 1.png
+
+ C:\Users\keert\Downloads\output 2...png
+
+ C:\Users\keert\Downloads\output 3....png
+
+ C:\Users\keert\Downloads\output 4.png
