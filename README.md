@@ -1,4 +1,4 @@
-# "gen ai healthcare diagnosis"
+# gen ai healthcare diagnosis
 
 # vary
 
