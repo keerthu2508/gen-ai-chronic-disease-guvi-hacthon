@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Healthcare Dashboard - Fullstack Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="avatar">H</div>
+        <span>Dashboard</span>
+      </div>
+      <nav class="nav">
+        <a class="active">Patients</a>
+        <a>Appointments</a>
+        <a>Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Dashboard</h1>
+        <div class="top-right">
+          <input class="search" placeholder="Search" id="searchInput" />
+          <div class="profile">Dr. Smith</div>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card card-blue">
+          <div class="label">Total Patients</div>
+          <div class="value" id="totalPatients">--</div>
+        </div>
+        <div class="card card-green">
+          <div class="label">New Appointments</div>
+          <div class="value" id="newAppointments">--</div>
+        </div>
+        <div class="card card-teal">
+          <div class="label">Upcoming Appointments</div>
+          <div class="value" id="upcomingAppointments">--</div>
+        </div>
+        <div class="card card-purple">
+          <div class="label">Reports Generated</div>
+          <div class="value" id="reportsGenerated">--</div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <h2>Patient List</h2>
+
+          <div class="test-area">
+            <h3>Test: Add sample patient</h3>
+            <div class="form-row">
+              <input id="inpName" placeholder="Name" />
+              <input id="inpAge" placeholder="Age" type="number" />
+              <input id="inpCond" placeholder="Condition" />
+              <button id="btnAdd">Add Patient</button>
+            </div>
+
+            <h3>Test: Update health metrics</h3>
+            <div class="form-row">
+              <input id="metricsLabels" placeholder="Labels comma-separated (Mon,Tue...)" />
+              <input id="metricsValues" placeholder="Values comma-separated (10,20,30)" />
+              <button id="btnMetrics">Update Metrics</button>
+            </div>
+          </div>
+
+          <table class="patients" id="patientsTable">
+            <thead><tr><th>Name</th><th>Age</th><th>Condition</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h2>Health Metrics</h2>
+          <canvas id="lineChart" width="400" height="240"></canvas>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <small>Made for Hackathon — Fullstack prototype (Node + Express)</small>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

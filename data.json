@@ -1,0 +1,68 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 45,
+      "condition": "Diabetes"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 34,
+      "condition": "Hypertension"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "age": 50,
+      "condition": "Hyperlipidemia"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "age": 29,
+      "condition": "Asthma"
+    },
+    {
+      "id": 5,
+      "name": "Daniel Wilson",
+      "age": 56,
+      "condition": "Coronary Artery Disease"
+    }
+  ],
+  "metrics": {
+    "labels": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat",
+      "Sun"
+    ],
+    "values": [
+      12,
+      18,
+      9,
+      24,
+      20,
+      21,
+      28
+    ]
+  },
+  "appointments": [
+    {
+      "id": 1,
+      "patient": "John Doe",
+      "date": "2025-07-30",
+      "time": "10:00"
+    },
+    {
+      "id": 2,
+      "patient": "Jane Smith",
+      "date": "2025-07-31",
+      "time": "14:00"
+    }
+  ]
+}
