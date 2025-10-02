@@ -105,3 +105,7 @@ $ npm test
 # ouput 
 
  http://localhost:3000
+
+ # output image
+
+ C:\Users\keert\Downloads\output 1.png
