@@ -101,3 +101,7 @@ $ npm test
 [coveralls-url]: https://coveralls.io/r/jshttp/vary
 [downloads-image]: https://img.shields.io/npm/dm/vary.svg
 [downloads-url]: https://npmjs.org/package/vary
+
+# ouput 
+
+ http://localhost:3000
